@@ -20,10 +20,14 @@ body {
 .list {
   list-style: none;
 }
+ul {
+  list-style: none;
+}
 
 .section {
   color: #000;
 }
+
 .logo {
   text-decoration: none;
 }
@@ -60,6 +64,34 @@ body {
   text-decoration: none;
   color: var(--accent-text-color);
 }
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.auth-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .auth-nav .link:hover,
